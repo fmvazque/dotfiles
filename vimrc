@@ -5,6 +5,7 @@ set encoding=utf-8
 colorscheme darkblue
 
 set incsearch
+set hlsearch
 
 set number
 set relativenumber
