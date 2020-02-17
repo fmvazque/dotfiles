@@ -1,5 +1,8 @@
 syntax on
 
+:autocmd InsertEnter * set cul
+:autocmd InsertLeave * set nocul
+
 set encoding=utf-8
 
 colorscheme darkblue
