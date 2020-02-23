@@ -5,7 +5,8 @@ syntax on
 
 set encoding=utf-8
 
-colorscheme darkblue
+" changed for now in favor of the seoul256 plug-in
+"colorscheme darkblue
 
 set incsearch
 set hlsearch
@@ -38,6 +39,14 @@ map <Down> <NOP>
 map <Up> <NOP>
 map <Left> <NOP>
 map <Right> <NOP>
+
+" Testing vim-plug Plug-in manager
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } 
+Plug 'junegunn/seoul256.vim'
+call plug#end()
+
+colorscheme seoul256-light
 
 " Enable filetype plugins
 filetype plugin on
@@ -105,6 +114,7 @@ endif
 
 try
     colorscheme desert
+"    colorscheme monokai
 catch
 endtry
 
