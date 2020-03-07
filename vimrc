@@ -100,6 +100,8 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" open NERDTree automatically
+autocmd VimEnter * NERDTree
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -113,8 +115,9 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+"    colorscheme desert
 "    colorscheme monokai
+    colorscheme seoul256
 catch
 endtry
 
