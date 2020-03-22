@@ -101,7 +101,7 @@ set tm=500
 set foldcolumn=1
 
 " NERDTree settings
-nmap <C-f> :NERDTreeToggle<CR>
+nmap <C-S-f> :NERDTreeToggle<CR>
 
 " open NERDTree automatically
 autocmd VimEnter * NERDTree
