@@ -45,9 +45,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} 
 Plug 'junegunn/seoul256.vim'
 Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 colorscheme seoul256-light
+colorscheme gruvbox
 
 " Enable filetype plugins
 filetype plugin on
