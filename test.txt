@@ -1,0 +1,14 @@
+This is an example file
+Just to train editing in VIM
+
+---
+
+---
+
+TODO:
+change
+
+puteychocolateychocolateychocolateychocolateyblic static void Main()
+{
+}
+

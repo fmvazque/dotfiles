@@ -44,7 +44,7 @@ map <Right> <NOP>
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} 
 Plug 'junegunn/seoul256.vim'
-Pluc 'dracula/vim', {'as': 'dracula'}
+Plug 'dracula/vim', {'as': 'dracula'}
 call plug#end()
 
 colorscheme seoul256-light
