@@ -46,6 +46,8 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'junegunn/seoul256.vim'
 Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+Plug 'mbbill/undotree'
 call plug#end()
 
 colorscheme seoul256-light
@@ -153,6 +155,9 @@ set noswapfile
 " Use spaces instead of tabs
 set expandtab
 
+" do its best job to indent
+set smartindent
+
 " Be smart when using tabs ;)
 set smarttab
 
@@ -194,7 +199,6 @@ endtry
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
 
 """"""""""""""""""""""""""""""
 " => Status line
