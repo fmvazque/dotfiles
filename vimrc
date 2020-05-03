@@ -48,10 +48,10 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
-colorscheme seoul256-light
-colorscheme gruvbox
+colorscheme nord
 
 " Enable filetype plugins
 filetype plugin on
