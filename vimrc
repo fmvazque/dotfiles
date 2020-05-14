@@ -49,6 +49,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline' 
 call plug#end()
 
 colorscheme nord
