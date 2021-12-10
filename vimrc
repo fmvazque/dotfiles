@@ -41,6 +41,12 @@ nnoremap <leader><leader> <c-^>
 nnoremap <leader>\ :vsplit<CR>
 nnoremap <leader>- :split<CR>
 
+" Move lines (SHIFT+K or SHIFT+J) or multiple line selection
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<CR>gv=gv
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
