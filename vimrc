@@ -41,7 +41,8 @@ map <Left> <NOP>
 map <Right> <NOP>
 
 " Testing vim-plug Plug-in manager
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/vimfiles/plugged')
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} 
 Plug 'junegunn/seoul256.vim'
 Plug 'dracula/vim', {'as': 'dracula'}
@@ -49,7 +50,6 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'arcticicestudio/nord-vim'
-Plug 'vim-airline/vim-airline' 
 call plug#end()
 
 colorscheme nord
@@ -106,8 +106,9 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-" NERDTree settings
+" Key Mappings  
 nmap <C-S-f> :NERDTreeToggle<CR>
+nmap <C-p> :FZF<CR>
 
 " open NERDTree automatically
 autocmd VimEnter * NERDTree
