@@ -31,6 +31,16 @@ set wrap
 set textwidth=80
 set colorcolumn=+1
 
+" Sets leader key
+let mapleader = ","
+
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" Configures Splitting
+nnoremap <leader>\ :vsplit<CR>
+nnoremap <leader>- :split<CR>
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
