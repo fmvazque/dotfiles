@@ -66,6 +66,12 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'arcticicestudio/nord-vim'
+Plug 'github/copilot.vim'
+Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline-themes' 
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 colorscheme nord
@@ -226,3 +232,10 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\%l\ \ Column:\ %c
+
+""""""""""""""""""""""""""""""
+" => Plug-ins specific config 
+""""""""""""""""""""""""""""""
+" Airline
+let g:airline#extensions#enabled = 1
+let g:airline_power_fonts = 1
